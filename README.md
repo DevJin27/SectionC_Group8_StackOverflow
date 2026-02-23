@@ -74,9 +74,14 @@ LanguageHaveWorkedWith - RemoteWork
 
 ## 5. Data Cleaning
 
-Steps: - Removed rows missing salary or experience. - Extracted currency
-codes. - Converted salaries to INR using exchange rate table. -
-Standardized country names. - Used median to avoid outlier distortion.
+Steps:
+- Selected 15 relevant columns and removed the remaining columns to reduce noise and improve processing efficiency.
+- Removed rows with missing values in critical fields (salary, experience, country, and currency).
+- Extracted currency codes from the raw currency field for accurate mapping.
+- Converted salaries to INR using an exchange rate lookup table.
+- Standardized country names to ensure consistency across the dataset.
+- Performed outlier detection using the IQR method; applied capping (winsorization) at the 5th and 95th percentiles to limit the effect of extreme salary values.
+- Used median instead of mean for all aggregations to avoid distortion from remaining skew.
 
 ------------------------------------------------------------------------
 
@@ -160,3 +165,20 @@ Estimated savings: ₹4.15 Cr per 10-person team annually.
 
 This project delivers a standardized INR-based salary benchmarking
 framework to support global hiring decisions.
+
+------------------------------------------------------------------------
+
+## D. Contribution Matrix
+
+| Team Member        | Sourcing | Cleaning | KPI & Analysis | Dashboard | Report Writing | PPT | Overall Role       |
+|--------------------|:--------:|:--------:|:--------------:|:---------:|:--------------:|:---:|--------------------|
+| Dev Jindal         | O        |          | O              |           |                |     | Team Lead          |
+| Aabir Sarkar       |          |          |                | O         |                | O   | Dashboard Lead     |
+| Piyush             |          |          |                |           | O              | O   | PPT & Quality Lead |
+| Pratyush Choukshey |          | O        |                |           |                |     | Strategy Lead      |
+| Bhawana            |          |          | O              | O         |                |     | Analysis Lead      |
+| Deepak Pandey      |          | O        |                |           |                |     | Data Lead          |
+
+*Declaration: We confirm that the above contribution details are accurate and verifiable through version history and submitted artifacts.*
+
+Team Signature: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Group 8 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
