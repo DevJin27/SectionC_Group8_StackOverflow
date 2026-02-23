@@ -3,7 +3,7 @@
 # GLOBAL DEVELOPER SALARY BENCHMARKING
 
 Solving Currency Chaos in Global Talent Acquisition\
-Recruitment & HR Analytics \| Stack Overflow Survey 2023 \| INR
+Recruitment & HR Analytics \| Stack Overflow Survey 2024 \| INR
 Normalization Framework
 
 ## SUBMITTED TO
